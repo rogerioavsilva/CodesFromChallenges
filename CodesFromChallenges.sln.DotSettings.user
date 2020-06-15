@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0b115946_002Da946_002D4c8d_002D96e0_002Da0f0f1703a80/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RainsOfReasonTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::046E676F-E3F7-471A-9594-5DB6541CDBD4::.NETCoreApp,Version=v3.1::CodeSignalXUnitTest.Intro.RainsOfReasonTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fb3679cd_002D0766_002D437e_002D9e2f_002Dfaec20259f23/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RainsOfReason" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::046E676F-E3F7-471A-9594-5DB6541CDBD4::.NETCoreApp,Version=v3.1::CodeSignalXUnitTest.Intro.RainsOfReasonTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
