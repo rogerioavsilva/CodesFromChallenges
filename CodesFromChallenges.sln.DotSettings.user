@@ -4,6 +4,11 @@
     &lt;TestId&gt;xUnit::046E676F-E3F7-471A-9594-5DB6541CDBD4::.NETCoreApp,Version=v3.1::CodeSignalXUnitTest.Intro.RainsOfReasonTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0eb7d3f4_002D8ad1_002D4e29_002Da71f_002D07df7273060a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="VariableNameTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::046E676F-E3F7-471A-9594-5DB6541CDBD4::.NETCoreApp,Version=v3.1::CodeSignalXUnitTest.Intro.RainsOfReasonTest.VariableNameTest1&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fb3679cd_002D0766_002D437e_002D9e2f_002Dfaec20259f23/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RainsOfReason" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::046E676F-E3F7-471A-9594-5DB6541CDBD4::.NETCoreApp,Version=v3.1::CodeSignalXUnitTest.Intro.RainsOfReasonTest&lt;/TestId&gt;&#xD;
