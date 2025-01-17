@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeSignal", "CodeSignal", "{20D40087-85D0-46B9-A20B-69314806C963}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSignalLibrary", "CodeSignal\CodeSignalLibrary\CodeSignalLibrary.csproj", "{983E0301-8901-4E82-B726-B5982D6F4496}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestCode", "ConsoleTestCode\ConsoleTestCode.csproj", "{732745A0-EB92-4F6B-90D8-49D4C98F57F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCode", "LeetCode", "{21DF7DBE-5350-4D05-84D5-2A0B2C5A641E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeUnitTest", "LeetCodeUnitTest\LeetCodeUnitTest.csproj", "{7840E96C-E7A0-487B-A42B-C9559E7AC608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,10 @@ Global
 		{732745A0-EB92-4F6B-90D8-49D4C98F57F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{732745A0-EB92-4F6B-90D8-49D4C98F57F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{732745A0-EB92-4F6B-90D8-49D4C98F57F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7840E96C-E7A0-487B-A42B-C9559E7AC608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7840E96C-E7A0-487B-A42B-C9559E7AC608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7840E96C-E7A0-487B-A42B-C9559E7AC608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7840E96C-E7A0-487B-A42B-C9559E7AC608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{046E676F-E3F7-471A-9594-5DB6541CDBD4} = {20D40087-85D0-46B9-A20B-69314806C963}
 		{983E0301-8901-4E82-B726-B5982D6F4496} = {20D40087-85D0-46B9-A20B-69314806C963}
+		{7840E96C-E7A0-487B-A42B-C9559E7AC608} = {21DF7DBE-5350-4D05-84D5-2A0B2C5A641E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0E8627F-9BFC-413F-B51E-C1A54EB94A23}
