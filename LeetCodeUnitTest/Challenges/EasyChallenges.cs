@@ -1,38 +1,9 @@
 ﻿
-using System.Text.RegularExpressions;
-
-namespace LeetCodeUnitTest
+namespace LeetCodeUnitTest.Challenges
 {
-    public class UnitTest1
+    internal static class EasyChallenges
     {
-
-        //        Console.WriteLine(Teste(new String[]{ "flower","flow","flight" }));
-        //		Console.WriteLine(Teste(new String[]{ "dog","racecar","car" }));
-        //Console.WriteLine(Teste(new String[] { "" }));
-        //Console.WriteLine(Teste(new String[] { "a" }));
-
-
-        public static IEnumerable<object[]> LongestCommonTestData =>
-        new List<object[]>
-        {
-                new object[] { new string[] { "flower", "flow", "flight" } , "fl" },
-                new object[] { new string[] { "reflower", "flow", "flight" } , ""},
-                new object[] { new string[] { "flower", "flower", "flower", "flower" } , "flower"},
-                new object[] { new string[] { "dog", "racecar", "car" } , ""},
-                new object[] { new string[] { "a", "a", "b" } , ""},
-                new object[] { new string[] { "aca","cba" } , ""},
-                new object[] { new string[] { "" }, "" }, // Empty array
-                new object[] { new string[] { "a" }, "a" } // Empty array
-        };
-
-        [Theory]
-        [MemberData(nameof(LongestCommonTestData))]
-        public void LongestCommonPrefixTest(string[] strs, string expected)
-        {
-            Assert.Equal(expected, LongestCommonPrefix(strs));
-        }
-
-        private string LongestCommonPrefix(string[] strs)
+        public static string LongestCommonPrefix(string[] strs)
         {
             if (strs.Length < 2)
             {
@@ -74,7 +45,7 @@ namespace LeetCodeUnitTest
         }
 
 
-        private string LongestCommonPrefix4(string[] strs)
+        public static string LongestCommonPrefix4(string[] strs)
         {
             if (strs.Length < 2)
             {
@@ -87,7 +58,7 @@ namespace LeetCodeUnitTest
 
             for (int i = 1; i < strs.Length; i++)
             {
-                if(smaller.Length > strs[i].Length)
+                if (smaller.Length > strs[i].Length)
                 {
                     smaller = strs[i];
                 }
@@ -144,7 +115,7 @@ namespace LeetCodeUnitTest
             return smaller;
         }
 
-        private string LongestCommonPrefix3(string[] strs)
+        public static string LongestCommonPrefix3(string[] strs)
         {
             Dictionary<string, int> prefixs = new Dictionary<string, int>();
 
@@ -222,7 +193,7 @@ namespace LeetCodeUnitTest
             return resultkey.Key;
         }
 
-        private string LongestCommonPrefixV1(string[] strs)
+        public static string LongestCommonPrefixV1(string[] strs)
         {
             Dictionary<string, int> prefixs = new Dictionary<string, int>();
 
@@ -306,6 +277,88 @@ namespace LeetCodeUnitTest
             }
 
             return resultkey.Key;
+        }
+
+        internal static bool ValidParentheses(string s)
+        {
+            const char parenOpen = '(';
+            const char parenClose = ')';
+            const char bracketsOpen = '[';
+            const char bracketsClose = ']';
+            const char bracesOpen = '{';
+            const char bracesClose = '}';
+
+            if ((s[0] == parenClose ||
+                s[0] == bracketsClose ||
+                s[0] == bracesClose) ||
+                (s[s.Length - 1] == parenOpen ||
+                s[s.Length - 1] == bracketsOpen ||
+                s[s.Length - 1] == bracesOpen))
+            {
+                return false;
+            }
+
+
+            Dictionary<char, int> token = new Dictionary<char, int>();
+            token.Add(parenClose, 0);
+            token.Add(parenOpen, 0);
+            token.Add(bracketsOpen, 0);
+            token.Add(bracketsClose, 0);
+            token.Add(bracesOpen, 0);
+            token.Add(bracesClose, 0);
+
+            char last = ' ';
+            foreach (char item in s)
+            {
+                switch (item)
+                {
+                    case parenClose:
+                        if (last == bracketsOpen || last == bracesOpen)
+                        {
+                            return false;
+                        }
+                        break;
+                    case bracketsClose:
+                        if (last == parenOpen || last == bracesOpen)
+                        {
+                            return false;
+                        }
+                        break;
+                    case bracesClose:
+                        if (last == bracketsOpen || last == parenOpen)
+                        {
+                            return false;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
+                if (!token.TryAdd(item, 0))
+                {
+                    token[item]++;
+                }
+
+                last = item;
+            }
+
+            if (!(token[parenOpen] - (token[parenClose]) == 0))
+            {
+                return false;
+            }
+
+            if (!(token[bracketsOpen] - (token[bracketsClose]) == 0))
+            {
+                return false;
+            }
+
+            if (!(token[bracesOpen] - (token[bracesClose]) == 0))
+            {
+                return false;
+            }
+
+
+            return true;
         }
     }
 }
